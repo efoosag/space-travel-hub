@@ -1,28 +1,25 @@
-/* eslint-disable comma-dangle */
-import React from 'react';
-import PropTypes from 'prop-types';
-import Rockets from './Rockets';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Rocket from './Rocket';
+import { getRockets } from '../redux/rockets';
 
-function RocketList({ rockets }) {
-  console.log(rockets);
+const RocketList = () => {
+  const rockets = useSelector((state) => state.entities.rockets);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getRockets());
+  });
   return (
-    <ul className="book-content">
-      {rockets.map((rocket) => (
-        <Rockets key={rocket.id} book={rocket} />
-      ))}
-    </ul>
+    <section className="section">
+      <ul className="list">
+        {rockets.map((rocket) => (
+          <li key={rocket.id}>
+            <Rocket rocket={rocket} />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
-}
-
-RocketList.propTypes = {
-  rockets: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      rocket_name: PropTypes.string,
-      description: PropTypes.string,
-      flickr_images: PropTypes.string,
-    }).isRequired
-  ).isRequired,
 };
 
 export default RocketList;
