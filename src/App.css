@@ -31,12 +31,12 @@
   margin: 0 8px;
 }
 
-.nav-link a{
+.nav-link a {
   color: #025fac;
   text-decoration: none;
 }
 
-.nav-link-active{
+.nav-link-active {
   border-bottom: 1px solid #025fac;
 }
 
@@ -170,7 +170,7 @@ tr:nth-child(odd) {
 }
 
 .badge-leave {
-  background-color: rgba(51,51,51,.7);
+  background-color: rgba(51, 51, 51, 0.7);
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -180,9 +180,9 @@ tr:nth-child(odd) {
 
 .btn-join {
   background-color: #fff;
-  border: 1px solid rgba(51,51,51,.9);
+  border: 1px solid rgba(51, 51, 51, 0.9);
   border-radius: 6px;
-  color: rgba(51,51,51,.9);
+  color: rgba(51, 51, 51, 0.9);
   font-size: 17px;
   padding: 10px;
   width: 150px;
