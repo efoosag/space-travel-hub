@@ -1,4 +1,4 @@
-const API_URL = 'https://api.spacexdata.com/v3/rockets';
+const API_URL = 'https://api.spacexdata.com/v3/rockets?';
 
 const fetchRockets = async () => {
   const response = await fetch(API_URL);

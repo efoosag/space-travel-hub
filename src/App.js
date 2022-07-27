@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RocketList from './components/RocketList';
-import Missions from './components/Missions';
+import MissionList from './components/MissionList';
 import Profile from './components/Profile';
 import NavBar from './components/shared/NavBar';
 import './App.css';
@@ -13,7 +13,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<RocketList />} />
-          <Route path="/missions" element={<Missions />} />
+          <Route path="/missions" element={<MissionList />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
