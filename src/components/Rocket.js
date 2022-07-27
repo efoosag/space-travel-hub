@@ -11,21 +11,23 @@ const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="rocket-row">
-      <div className="rocket-img">
-        <img src={image} alt={image} />
-      </div>
-      <div className="rocket-desc">
-        <h3 className="title">{name}</h3>
-        <div className="description">
-          {reserved ? <span className="badge">Reserved</span> : ''}
-          {description}
+    <li>
+      <div className="rocket-row">
+        <div className="rocket-img">
+          <img src={image} alt={image} />
         </div>
-        {reserved
-          ? <button type="submit" className="cancel-btn" onClick={() => dispatch(cancelReservation({ id }))}>Cancel Reservation</button>
-          : <button type="submit" className="btn" onClick={() => dispatch(reserveRocket({ id }))}>Reserve Rocket</button>}
+        <div className="rocket-desc">
+          <h3 className="title">{name}</h3>
+          <div className="description">
+            {reserved ? <span className="badge">Reserved</span> : ''}
+            {description}
+          </div>
+          {reserved
+            ? <button type="submit" className="cancel-btn" onClick={() => dispatch(cancelReservation({ id }))}>Cancel Reservation</button>
+            : <button type="submit" className="btn" onClick={() => dispatch(reserveRocket({ id }))}>Reserve Rocket</button>}
+        </div>
       </div>
-    </div>
+    </li>
   );
 };
 

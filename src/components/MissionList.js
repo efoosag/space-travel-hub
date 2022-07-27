@@ -2,14 +2,13 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Mission from './Mission';
 import { getMissions } from '../redux/missions';
-import '../App.css';
 
 const MissionList = () => {
   const missions = useSelector((state) => state.entities.missions);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMissions());
-  });
+  }, []);
   return (
     <section className="section">
       <table className="mission-table">
@@ -21,9 +20,7 @@ const MissionList = () => {
         </thead>
         <tbody>
           {missions.map((mission) => (
-            <tr key={mission.id}>
-              <Mission mission={mission} />
-            </tr>
+            <Mission key={mission.id} mission={mission} />
           ))}
         </tbody>
       </table>

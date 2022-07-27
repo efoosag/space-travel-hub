@@ -8,14 +8,12 @@ const RocketList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getRockets());
-  });
+  }, []);
   return (
     <section className="section">
       <ul className="list">
         {rockets.map((rocket) => (
-          <li key={rocket.id}>
-            <Rocket rocket={rocket} />
-          </li>
+          <Rocket key={rocket.id} rocket={rocket} />
         ))}
       </ul>
     </section>

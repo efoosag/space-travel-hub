@@ -18,14 +18,14 @@ const slice = createSlice({
       const id = missions.findIndex(
         (mission) => mission.id === action.payload.id
       );
-      missions[id].joined = true;
+      missions[id].reserved = true;
     },
     leaveMission(missions, action) {
       /* eslint-disable no-param-reassign */
       const id = missions.findIndex(
         (mission) => mission.id === action.payload.id
       );
-      missions[id].joined = false;
+      missions[id].reserved = false;
     },
   },
   extraReducers: (builder) => {

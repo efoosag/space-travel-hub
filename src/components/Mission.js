@@ -4,55 +4,40 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../redux/missions';
-import '../App.css';
 
 const Mission = ({ mission }) => {
-  const { id, name, description, joined } = mission;
+  const { id, name, description, reserved } = mission;
 
   const dispatch = useDispatch();
 
   return (
-    <>
+    <tr>
       <td className="centerAlign">{name}</td>
       <td className="description">{description}</td>
       <td className="centerAlign">
         <span>
-          {joined ? (
-            <span className="badge-leave">NOT A MEMBER</span>
+          {reserved ? (
+            <span className="badge-leave">ACTIVE MEMBER</span>
           ) : (
-            <span className="badge-join">ACTIVE MEMBER</span>
+            <span className="badge-join">NOT A MEMBER</span>
           )}
         </span>
       </td>
       <td className="centerAlign">
-        {joined ? (
-          <button
-            type="submit"
-            className="btn-join"
-            onClick={() => dispatch(joinMission({ id }))}
-          >
-            JOIN MISSION
-          </button>
-        ) : (
-          <button
-            type="submit"
-            className="btn-leave"
-            onClick={() => dispatch(leaveMission({ id }))}
-          >
-            LEAVE MISSION
-          </button>
-        )}
+        {reserved
+          ? <button type="submit" className="btn-leave" onClick={() => dispatch(leaveMission({ id }))}>Leave Mission</button>
+          : <button type="submit" className="btn-join" onClick={() => dispatch(joinMission({ id }))}>Join Mission</button>}
       </td>
-    </>
+    </tr>
   );
 };
 
 Mission.propTypes = {
   mission: PropTypes.shape({
-    id: PropTypes.number,
+    id: PropTypes.string,
     name: PropTypes.string,
     description: PropTypes.string,
-    joined: PropTypes.bool,
+    reserved: PropTypes.bool,
   }),
 };
 

@@ -8,7 +8,7 @@ const fetchMissions = async () => {
     id: mission.mission_id,
     name: mission.mission_name,
     description: mission.description,
-    joined: false,
+    reserved: false,
   }));
 };
 
