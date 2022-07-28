@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/space-travel-hub/static/css/main.dfd9bbde.css",
+    "main.js": "/space-travel-hub/static/js/main.4a7e2c85.js",
+    "static/js/787.e8071f80.chunk.js": "/space-travel-hub/static/js/787.e8071f80.chunk.js",
+    "static/media/space-logo.png": "/space-travel-hub/static/media/space-logo.3f6fb2742f28651730c0.png",
+    "index.html": "/space-travel-hub/index.html",
+    "main.dfd9bbde.css.map": "/space-travel-hub/static/css/main.dfd9bbde.css.map",
+    "main.4a7e2c85.js.map": "/space-travel-hub/static/js/main.4a7e2c85.js.map",
+    "787.e8071f80.chunk.js.map": "/space-travel-hub/static/js/787.e8071f80.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfd9bbde.css",
+    "static/js/main.4a7e2c85.js"
+  ]
+}
