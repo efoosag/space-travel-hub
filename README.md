@@ -37,8 +37,8 @@
 👤 **Agasha Bornittah**
 
 - GitHub: [@Bornittah](https://github.com/Bornittah)
-- Twitter:
-- LinkedIn:
+- Twitter: [@AgashaBornittah](https://twitter.com/AgashaBornittah)
+- LinkedIn: [Bornittah](www.linkedin.com/in/agasha-bornittah)
 
 👤 **Victor Osagie**
 
