@@ -1,4 +1,5 @@
-> This project is geared towards working with APIS to build a space travel hub through the following practices:
+# space-travel-hub
+This project is geared towards working with APIS to build a space travel hub through the following practices:
 
 - Create repository withe readme file
 - Create Branch
