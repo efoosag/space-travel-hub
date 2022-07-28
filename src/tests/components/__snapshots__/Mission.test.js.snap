@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Mission component Testing with snapshot 1`] = `
+<tr>
+  <td
+    className="centerAlign"
+  >
+    Falcon 1
+  </td>
+  <td
+    className="description"
+  >
+    The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.
+  </td>
+  <td
+    className="centerAlign"
+  >
+    <span>
+      <span
+        className="badge-leave"
+      >
+        ACTIVE MEMBER
+      </span>
+    </span>
+  </td>
+  <td
+    className="centerAlign"
+  >
+    <button
+      className="btn-leave"
+      onClick={[Function]}
+      type="submit"
+    >
+      Leave Mission
+    </button>
+  </td>
+</tr>
+`;
