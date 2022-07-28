@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing RocketList component Testing with snapshot 1`] = `
+<section
+  className="section"
+>
+  <ul
+    className="list"
+  />
+</section>
+`;
