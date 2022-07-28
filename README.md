@@ -1,4 +1,5 @@
 # space-travel-hub
+
 This project is geared towards working with APIS to build a space travel hub through the following practices:
 
 - Create repository withe readme file
@@ -14,6 +15,11 @@ This project is geared towards working with APIS to build a space travel hub thr
 - Add fetch Data functionality from APIs
 - Add Stylings
 - Carry jest test
+- Deployment
+
+## For Access Online
+
+Click: https://efoosag.github.io/space-travel-hub/
 
 ## Built With
 
