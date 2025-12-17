@@ -1,7 +1,6 @@
 {
   "name": "space-travel-hub",
-  "version": "0.1.0",
-  "homepage": "https://gitname.github.io/space-travel-hub",
+  "version": "0.1.0",  
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
@@ -18,6 +17,7 @@
     "react-test-renderer": "^18.2.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
+    "update": "^0.7.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
