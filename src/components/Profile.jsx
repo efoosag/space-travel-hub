@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getMissions } from '../redux/missions';
-import { getRockets } from '../redux/rockets';
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getMissions } from "../redux/missions";
+import { getRockets } from "../redux/rockets";
 
 const Profile = () => {
   const missionState = useSelector((state) => state.entities.missions);
@@ -14,26 +14,45 @@ const Profile = () => {
     dispatch(getRockets());
   }, []);
   return (
-    <section className="section">
-      <div className="profile">
-        <div className="profile-section">
-          <h3 className="profile-title">My Missions</h3>
-          <ul className="profile-list list">
-            {missions.length > 0 ? missions.map((mission) => (
-              <li className="list-item" key={mission.id}>
-                {mission.name}
-              </li>
-            )) : <p>There are no reserved missions</p>}
+    <section className="section px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-5xl grid gap-8 md:grid-cols-2">
+        {/* My Missions */}
+        <div className="profile-section bg-white dark:bg-gray-900 p-6 rounded-xl shadow-sm">
+          <h3 className="profile-title text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">
+            My Missions
+          </h3>
+          <ul className="profile-list list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+            {missions.length > 0 ? (
+              missions.map((mission) => (
+                <li key={mission.id} className="text-sm sm:text-base">
+                  {mission.name}
+                </li>
+              ))
+            ) : (
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                There are no reserved missions
+              </p>
+            )}
           </ul>
         </div>
-        <div className="profile-section">
-          <h3 className="profile-title">My Rockets</h3>
-          <ul className="profile-list list">
-            {rockets.length > 0 ? rockets.map((rocket) => (
-              <li className="list-item" key={rocket.id}>
-                {rocket.name}
-              </li>
-            )) : <p>There are no reserved rockets</p>}
+
+        {/* My Rockets */}
+        <div className="profile-section bg-white dark:bg-gray-900 p-6 rounded-xl shadow-sm">
+          <h3 className="profile-title text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">
+            My Rockets
+          </h3>
+          <ul className="profile-list list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+            {rockets.length > 0 ? (
+              rockets.map((rocket) => (
+                <li key={rocket.id} className="text-sm sm:text-base">
+                  {rocket.name}
+                </li>
+              ))
+            ) : (
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                There are no reserved rockets
+              </p>
+            )}
           </ul>
         </div>
       </div>
