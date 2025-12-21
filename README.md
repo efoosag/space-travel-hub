@@ -1,36 +1,34 @@
 # space-travel-hub
 
-This project is geared towards working with APIS to build a space travel hub through the following practices:
+This project is geared towards applying frontend development skills by building a responsive web application that consumes APIs to display information about space missions and rockets, while also demonstrating project planning and testing best practices.
 
-- Create repository withe readme file
-- Create Branch
-- Applying best practices for HTML, CSS and JavaScript
-- Applying Github Flow
-- Applying Git Flow
-- Descriptive and Understanding Commit Messages and ReadMe file
-- Pull Request in Github for code review
-- Use kanban board to plan and allocate tasks for the developers
-- Using the URLs provided missions and rockets
-- Add fetch Data functionality from APIs
-- Add Stylings
-- Carry jest test
-- Deployment
+- API consumption and data handling
+- Modern React and Redux project structure
+- Kanban board for task allocation
+- Clean UI/UX with responsive design
+
+# Getting Started
+
+This project focuses on building a real-world React application that integrates public APIs to fetch mission and rocket data. It demonstrates best practices in project planning, state management, testing, and responsive design.
+
+To get a local copy up and running, follow these steps:
 
 ## For Access Online
 
 Click: https://efoosag.github.io/space-travel-hub/
 
+
 ## Built With
 
 - Major languages
-  HTML
-  CSS
-  JavaScript
-  React and Redux
+- HTML, CSS, JavaScript
+- React, Redux
 
-- Technologies used
-  GitHub and Git
-  Visual Studio Code
+## Technologies used
+
+- GitHub & Git
+- Visual Studio Code
+- Public SpaceX APIs
 
 ## Getting Started
 
