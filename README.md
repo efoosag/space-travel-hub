@@ -15,7 +15,7 @@ To get a local copy up and running, follow these steps:
 
 ## For Access Online
 
-Click: https://efoosag.github.io/space-travel-hub/
+Click: https://space-travel-qkaqmss2j-victors-projects-70d0cc5d.vercel.app/
 
 
 ## Built With
